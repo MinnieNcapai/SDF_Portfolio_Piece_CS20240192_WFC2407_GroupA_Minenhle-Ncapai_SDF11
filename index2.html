@@ -6,9 +6,8 @@
 
     <!-- Setting the title of the webpage -->
     <title>Cache Bank Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
     <!-- Importing Tailwind CSS from a CDN -->
-    <script src="https://cdn.tailwindcss.com"></script> <!--added PS-->
+    <!--<script src="https://cdn.tailwindcss.com"></script> --><!--added PS-->
 
     <!-- Configuring Tailwind CSS with custom theme settings -->
     <script>
@@ -49,7 +48,7 @@
 
          <!-- Navigation links -->
            <div class="md:flex items-center  text-black gap-12">
-               <a class="text-sm font-normal text-dark-grey-700 hover:text-grey-900">Product</a>
+               <a class="text-sm font-normal text-dark-grey-700 hover:text-grey-700">Product</a>
                <a class="text-sm font-normal text-dark-grey-700 hover:text-grey-900">Features</a>
                <a class="text-sm font-normal text-dark-grey-700 hover:text-grey-900">Get Started</a>
                <a class="text-sm font-normal text-dark-grey-700 hover:text-grey-900">Contact</a>
@@ -115,8 +114,8 @@
 
     <!-- Script for mobile menu toggle -->
     <script> /*added Ps for the mobile menu*/
-        document.getElementById("mobile-menu-toggle").addEventListener("click", Function(), {
-            document:querySelector("md:flex").classList.toggle("hidden"),
+        document.getElementById("mobile-menu-toggle").addEventListener("click", function() {
+            document.querySelectorAll("md:flex").classList.toggle("hidden")
         })
     </script>
 
@@ -210,6 +209,26 @@
 </section>
 
 
+ <!--COMPONENT 3-->
+<!--features-->
+<div class=" container m-auto py-10 flex flex-col items-center justify-center">
+  <!--HEADER SECTION-->
+  <div class=" flex flex-col items-center justify-center mt-12 ">
+    <!--Heading-->
+  <h1 class="mb-4 text-4xl font-extrabold text-dark-grey-900 text-center">  Elevate Your banking with Cache </h1>
+  <!--Description Paragraph-->
+  <p class="text-lg text-center  w-7/12 text-grey-700" >
+    We merge cutting-edge banking with deep understanding 
+    of software developer's needs. Experience tailored financial solutions,
+     advanced security, and tech-focused support designed designed just for you.
+  </p>
+  </div>
+<!--END OF HEADER SECTION-->
+
+
+</div>
+
+
    
 <!-- Loopple scripts -->
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"></script>
@@ -219,7 +238,7 @@
 
     <!-- Importing local script files -->
     <script src="./assets/js/loopple/loopple.js"></script>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="tailwind.config.js"></script>
 </body>
 
 </html>
