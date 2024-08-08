@@ -37,17 +37,17 @@
         <!--COMPONENT 1-->
         <div class="mx-auto bg-white">
             <!-- Main container with navigation and header content -->
-       <div class=" relative flex flex-wrap items-center justify-between w-full shrink-0"> </div> <!--added PS-->
+       <div class="relative flex flex-wrap items-center justify-between w-full shrink-0"> </div> <!--added PS-->
 
         <!-- Navigation bar -->
-       <nav class="flex flex-wrap justify-between items-center py-4 w-full shrink-0 ">
+     <nav class="flex flex-wrap justify-between items-center py-4 w-full shrink-0 ">
          <div class="px-4">
            <!-- Company logo -->
             <img class="h-8"  src="./assets/component-1/navigation/cache-bank-logo.png">   
          </div> <!--added these 4 divs + btn Ps remember-->
 
          <!-- Navigation links -->
-           <div id="mobile-menu" class="hidden md:flex justify-between items-center  text-black gap-12">
+           <div id="mobile-menu" class="hidden md:flex  justify-between items-center  text-black gap-12">
                <a class="text-sm font-normal text-dark-grey-700 hover:text-grey-700" href="#Product">Product</a>
                <a class="text-sm font-normal text-dark-grey-700 hover:text-grey-900" href="#Features">Features</a>
                <a class="text-sm font-normal text-dark-grey-700 hover:text-grey-900" href="#Get-Started">Get Started</a>
@@ -59,7 +59,7 @@
              <button class="text-sm font-normal text-dark-grey-800 hover:text-dark-grey-900">Log In</button>
              <button class="px-4 py-2 text-sm font-bold text-blue bg-green-500 rounded-xl hover:bg-pink-500">Sign Up</button>
            </div>
-
+          
            <!-- Mobile-menu-toggle button -->
            <button id="mobile-menu-toggle" class="p-4 md:hidden" > 
             <svg
@@ -90,8 +90,9 @@
             </defs>
           </svg>
            </button>
+          
            <!-- Mobile Menu: Hidden by default, shown when triggered -->
-           <div class="absolute hidden md:hidden  flex-col items-start justify-center w-full gap-3 overflow-hidden bg-white max-h-screen top-full px-4 py-8 shadow-main" id="mobile-menu">
+           <div class= "absolute hidden md:hidden flex flex-col items-start justify-center w-full gap-3 overflow-hidden bg-white max-h-screen top-full px-4 py-8 shadow-main" id="mobile-menu">
              <!-- Navigation Links: Directs the user to different sections of the website -->
                 <a class="text-sm font-normal text-dark-grey-700 hover:text-grey-900" href="Product">Product</a>
                 <a class="text-sm font-normal text-dark-grey-700 hover:text-grey-900" href="Features">Features</a>
@@ -101,9 +102,10 @@
                <button class="px-4 py-2 text-sm font-bold text-blue bg-green-500 rounded-xl hover:bg-pink-500">Sign Up</button>
              
            </div>
-       </nav>
+       </nav> 
        </div>
     </div>
+  
 <!-- Script for mobile menu toggle -->
     <script> 
        document.getElementById("mobile-menu-toggle").addEventListener("click", function() {
@@ -114,6 +116,7 @@
     });
   
   </script>
+  <!--</nav>-->
 
     <!--COMPONENT 2: Hero and Endorsements-->
     <!--HERO-->
@@ -336,6 +339,7 @@
  </div>
  <!--END OF CARD SECTION-->
 </div>
+
 <!--COMPONENT 4 Stats and getting started-->
 <!--STATS Section-->
 <div class="w-full">
@@ -424,6 +428,14 @@
     </div>
   </div>
 </div>
+
+<!--COMPONENT 5:CONTACT AND FOOTER-->
+
+<!--Contact Section-->
+<div class="w-full" id="Contact">
+  <!-- grid Container-->
+   <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+
 
 
 
